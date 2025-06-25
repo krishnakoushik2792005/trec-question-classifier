@@ -1,0 +1,22 @@
+# 1) Ignore any real model files under models/
+models/distilbert-trec-tf/trained_model/
+models/distilbert-trec-tf/tokenizer/
+models/distilbert-trec-tf/trained model/tf_model.h5
+
+
+# But still keep the empty models/ folder via .gitkeep
+!models/.gitkeep
+
+# 2) Ignore Python byte-code files and all __pycache__ folders
+__pycache__/
+*.py[cod]
+
+# 3) Ignore data caches (Hugging Face, pip, etc.)
+.cache/
+
+# 4) Ignore virtual environment folders
+.venv/
+env/
+
+# 5) Optional: ignore Jupyter checkpoints
+.ipynb_checkpoints/
